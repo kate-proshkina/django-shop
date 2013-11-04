@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+from django.shortcuts import HttpResponse
+from shop.models import Product, Order
+def index(request):
+    html = "<h1>Магазин</h1><hr>"
+    return HttpResponse(html)
